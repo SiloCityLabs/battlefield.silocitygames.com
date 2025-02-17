@@ -3,8 +3,12 @@
     "title": "Battlefield 2042",
     "text": "Coming Soon",
     "variant": "danger",
-    "btn1Text": "Generator",
-    "link": "#Battlefield2042",
-    "disabled": true
+    "buttons": [
+      {
+        "link": "#Battlefield2042",
+        "disabled": true,
+        "btnText": "Generator"
+      }
+    ]
   }
 ]
