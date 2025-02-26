@@ -1,13 +1,17 @@
-import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+"use client";
+import { Container, Nav, Navbar, Badge } from "react-bootstrap";
+import React from 'react';
 
 interface HeaderProps {
   className?: string;
   navLinks?: { label: string; href: string; target?: string }[];
+  darkLinks?: boolean;
+  isBeta?: boolean;
 }
 
 const defaultNavLinks = [
   { label: "Home", href: "/", target: "" },
+  { label: "Feedback", href: "/feedback", target: "" },
   {
     label: "GitHub",
     href: "https://github.com/SiloCityLabs/battlefield.silocitygames.com",
@@ -15,8 +19,13 @@ const defaultNavLinks = [
   },
 ];
 
+const navbarBrand = {
+  title: "Battlefield",
+  subtitle: "By SiloCityGames",
+}
+
 function Header(props: HeaderProps) {
-  const { className, navLinks = defaultNavLinks } = props;
+  const { className, navLinks = defaultNavLinks, darkLinks = false, isBeta = false } = props;
 
   return (
     <Navbar
@@ -27,8 +36,24 @@ function Header(props: HeaderProps) {
       className={`${className}`}
     >
       <Container>
-        <Navbar.Brand href="/">Battlefield</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Brand href="/" className="position-relative d-flex align-items-center">
+          {isBeta && (
+            <Badge
+              bg="warning"
+              text="dark"
+              style={{ fontSize: ".6rem", marginRight: "0.5rem" }}
+            >
+              BETA
+            </Badge>
+          )}
+          <div>
+            {navbarBrand.title}
+            {navbarBrand.subtitle && (
+              <span className="navbar-subtitle">{navbarBrand.subtitle}</span>
+            )}
+          </div>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className={darkLinks ? 'black-toggler' : ""} />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             {navLinks.map((link, index) => (
