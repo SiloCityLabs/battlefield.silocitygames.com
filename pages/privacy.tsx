@@ -14,7 +14,7 @@ export default function Privacy() {
         <meta name="keywords" content="privacy policy" />
       </Head>
       <div className="main-container">
-        <Header />
+        <Header showBadge={true} />
         <Container className="main-content" fluid>
           <Row>
             <Col>
@@ -30,10 +30,9 @@ export default function Privacy() {
                       This Privacy Policy governs the manner in which
                       Techreanimate collects, uses, maintains and discloses
                       information collected from users (each, a
-                      &quot;User&quot;) of the
-                      https://battlefield.silocitygames.com website
-                      (&quot;Site&quot;). This privacy policy applies to the
-                      Site and all products and services offered by
+                      &quot;User&quot;) of the {process.env.NEXT_PUBLIC_APP_URL}{" "}
+                      website (&quot;Site&quot;). This privacy policy applies to
+                      the Site and all products and services offered by
                       Techreanimate.
                     </p>
                     <br />
@@ -201,7 +200,7 @@ export default function Privacy() {
                       establishing the use, disclaimers, and limitations of
                       liability governing the use of our website at{" "}
                       <Link href="/terms">
-                        https://battlefield.silocitygames.com/terms
+                        {process.env.NEXT_PUBLIC_APP_URL}/terms
                       </Link>
                     </p>
                     <br />

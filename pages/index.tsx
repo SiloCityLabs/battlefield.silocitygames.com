@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Battlefield Random Class Generators</title>
+        <title>{`${process.env.NEXT_PUBLIC_APP_NAME} - Random Class Generators`}</title>
         <link rel="manifest" href="/manifest.json" />
         <meta
           name="description"
@@ -19,7 +19,7 @@ export default function Home() {
         <meta name="keywords" content="battlefield, battlefield 2042" />
       </Head>
       <div className="main-container">
-        <Header isBeta={true} />
+        <Header showBadge={true} />
         <Container className="main-content mt-3">
           <Row>
             {generatorList.map((card, index) => (
