@@ -10,5 +10,17 @@
         "btnText": "Generator"
       }
     ]
+  },
+  {
+    "title": "Battlefield Hardline",
+    "text": "",
+    "variant": "hardline",
+    "buttons": [
+      {
+        "link": "hardline/generator",
+        "disabled": false,
+        "btnText": "Generator"
+      }
+    ]
   }
 ]

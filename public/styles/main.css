@@ -5,3 +5,49 @@
 #main-header a {
   color: white !important;
 }
+
+/* Hardline - #E88408 */
+.btn-hardline {
+  color: #ffffff; /* Assuming you want white text */
+  background-color: #e88408;
+  border-color: #e88408;
+}
+
+.btn-hardline:hover,
+.btn-hardline:focus,
+.btn-hardline:active,
+.btn-hardline.active,
+.open .dropdown-toggle.btn-hardline {
+  color: #ffffff;
+  background-color: #d57707; /* Darker shade for hover/active - adjusted from Black Ops example */
+  border-color: #e88408; /* Keep the original border color, or adjust as needed */
+}
+.btn-hardline:active,
+.btn-hardline.active,
+.open .dropdown-toggle.btn-hardline {
+  background-image: none;
+}
+
+.btn-hardline.disabled,
+.btn-hardline[disabled],
+fieldset[disabled] .btn-hardline,
+.btn-hardline.disabled:hover,
+.btn-hardline[disabled]:hover,
+fieldset[disabled] .btn-hardline:hover,
+.btn-hardline.disabled:focus,
+.btn-hardline[disabled]:focus,
+fieldset[disabled] .btn-hardline:focus,
+.btn-hardline.disabled:active,
+.btn-hardline[disabled]:active,
+fieldset[disabled] .btn-hardline:active,
+.btn-hardline.disabled.active,
+.btn-hardline[disabled].active,
+fieldset[disabled] .btn-hardline.active {
+  background-color: #e88408;
+  border-color: #e88408;
+}
+
+.btn-hardline .badge {
+  color: #e88408;
+  background-color: #ffffff; /* Keep badge consistent */
+}
