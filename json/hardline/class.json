@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Operator",
+    "type": "Class",
+    "game": "hardline"
+  },
+  {
+    "name": "Mechanic",
+    "type": "Class",
+    "game": "hardline"
+  },
+  {
+    "name": "Enforcer",
+    "type": "Class",
+    "game": "hardline"
+  },
+  {
+    "name": "Professional",
+    "type": "Class",
+    "game": "hardline"
+  }
+]

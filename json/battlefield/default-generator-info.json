@@ -1,5 +1,7 @@
 {
   "randClassName": "",
+  "cycleStyle": "",
+  "classType": "",
   "weapons": {
     "primary": {
       "weapon": {
@@ -19,14 +21,27 @@
       },
       "attachments": ""
     },
-    "sidearm": {
+    "melee": {
       "weapon": {
         "name": "",
         "type": "",
         "game": "",
         "no_attach": false
-      },
-      "attachments": ""
+      }
+    }
+  },
+  "equipment": {
+    "gadgetOne": {
+      "name": "",
+      "type": ""
+    },
+    "gadgetTwo": {
+      "name": "",
+      "type": ""
+    },
+    "lethal": {
+      "name": "",
+      "type": ""
     }
   }
 }

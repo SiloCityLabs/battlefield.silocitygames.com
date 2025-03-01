@@ -5,18 +5,13 @@ import SimpleGeneratorView from "@/components/generators/SimpleGeneratorView";
 //Helpers
 import { scrollToTop } from "@/helpers/scrollToTop";
 import { fetchWeapon } from "@/helpers/fetch/fetchWeapon";
+import { fetchClassName } from "@/helpers/fetch/fetchClassName";
 // import { fetchAttachments } from "@/helpers/fetch/fetchAttachments";
 //Utils
 import { sendEvent } from "@/utils/gtag";
 //json
 import defaultData from "@/json/battlefield/default-generator-info.json";
 
-const defaultWeapon = {
-  name: "",
-  type: "",
-  game: "",
-  no_attach: false,
-};
 const defaultItem = { name: "", type: "", game: "" };
 
 function HardlineLoadout() {
@@ -40,7 +35,7 @@ function HardlineLoadout() {
     }, 1000);
   };
 
-  const { deliveryCost, randClassName, weapons, body, equipment } = data;
+  const { randClassName, cycleStyle, classType, weapons, equipment } = data;
 
   if (isLoading) {
     return <div className="text-center">Loading...</div>;
@@ -54,11 +49,28 @@ function HardlineLoadout() {
           <Col sm className="text-center mb-3 mb-md-0">
             <SimpleGeneratorView
               isGenerating={isGenerating}
+              title="Cycle Style"
+              value={cycleStyle}
+            />
+          </Col>
+          <Col sm className="text-center mb-3 mb-md-0">
+            <SimpleGeneratorView
+              isGenerating={isGenerating}
+              title="Class"
+              value={classType}
+            />
+          </Col>
+        </Row>
+        <hr />
+        <Row className="justify-content-md-center">
+          <Col sm className="text-center mb-3 mb-md-0">
+            <SimpleGeneratorView
+              isGenerating={isGenerating}
               title="Primary"
               value={
                 !weapons.primary.weapon.name
                   ? "None"
-                  : `${weapons.primary.weapon.rarity}: ${weapons.primary.weapon.name}`
+                  : `${weapons.primary.weapon.name}`
               }
             />
             <br />
@@ -79,7 +91,7 @@ function HardlineLoadout() {
               value={
                 !weapons.secondary.weapon.name
                   ? "None"
-                  : `${weapons.secondary.weapon.rarity}: ${weapons.secondary.weapon.name}`
+                  : `${weapons.secondary.weapon.name}`
               }
             />
             <br />
@@ -96,97 +108,43 @@ function HardlineLoadout() {
           <Col sm className="text-center mb-3 mb-md-0">
             <SimpleGeneratorView
               isGenerating={isGenerating}
-              title="Sidearm"
+              title="Melee"
               value={
-                !weapons.sidearm.weapon.name
+                !weapons.melee.weapon.name
                   ? "None"
-                  : `${weapons.sidearm.weapon.rarity}: ${weapons.sidearm.weapon.name}`
-              }
-            />
-            <br />
-            <SimpleGeneratorView
-              isGenerating={isGenerating}
-              title="Sidearm Attachments"
-              value={
-                !weapons.sidearm.attachments
-                  ? "No Attachments"
-                  : weapons.sidearm.attachments
+                  : `${weapons.melee.weapon.name}`
               }
             />
           </Col>
         </Row>
         <hr />
-        <Row className="justify-content-md-center">
+        <Row className="justify-content-md-center mb-4">
           <Col sm className="text-center mb-3 mb-md-0">
             <SimpleGeneratorView
               isGenerating={isGenerating}
-              title="Left Arm"
-              value={
-                !body.left_arm.name
-                  ? "None"
-                  : `${body.left_arm.rarity}: ${body.left_arm.name}`
-              }
+              title="Gadget One"
+              value={equipment.gadgetOne.name}
             />
           </Col>
           <Col sm className="text-center mb-3 mb-md-0">
             <SimpleGeneratorView
               isGenerating={isGenerating}
-              title="Legs"
-              value={
-                !body.legs.name
-                  ? "None"
-                  : `${body.legs.rarity}: ${body.legs.name}`
-              }
+              title="Gadget Two"
+              value={equipment.gadgetTwo.name}
             />
           </Col>
           <Col sm className="text-center mb-3 mb-md-0">
             <SimpleGeneratorView
               isGenerating={isGenerating}
-              title="Right Arm"
-              value={
-                !body.right_arm.name
-                  ? "None"
-                  : `${body.right_arm.rarity}: ${body.right_arm.name}`
-              }
-            />
-          </Col>
-        </Row>
-        <hr />
-        <Row className="justify-content-md-center mb-3">
-          <Col sm className="text-center mb-3 mb-md-0">
-            <SimpleGeneratorView
-              isGenerating={isGenerating}
-              title="Backpack"
-              value={
-                !equipment.backpack.name
-                  ? "None"
-                  : `${equipment.backpack.rarity}: ${equipment.backpack.name}`
-              }
-            />
-          </Col>
-          <Col sm className="text-center mb-3 mb-md-0">
-            <SimpleGeneratorView
-              isGenerating={isGenerating}
-              title="Consumable"
-              value={
-                !equipment.consumable.name
-                  ? "None"
-                  : `${equipment.consumable.rarity}: ${equipment.consumable.name}`
-              }
-            />
-          </Col>
-          <Col sm className="text-center mb-3 mb-md-0">
-            <SimpleGeneratorView
-              isGenerating={isGenerating}
-              title="Delivery Cost"
-              value={!deliveryCost ? "None" : String(deliveryCost)}
+              title="Grenades/Knives"
+              value={equipment.lethal.name}
             />
           </Col>
         </Row>
         <Row id="button-row">
           <Col className="text-center">
             <Button
-              variant="danger"
+              variant="hardline"
               disabled={isGenerating}
               onClick={isGenerating ? undefined : handleClick}
             >
@@ -201,85 +159,76 @@ function HardlineLoadout() {
 
 async function fetchLoadoutData(setData) {
   sendEvent("button_click", {
-    button_id: "otg_fetchLoadoutData",
-    label: "OffTheGrid",
-    category: "OTG_Loadouts",
+    button_id: "hardline_fetchLoadoutData",
+    label: "BattlefieldHardline",
+    category: "Battlefield_Loadouts",
   });
 
   try {
     console.clear();
-    const game = "off-the-grid";
-    let deliveryCost = 500;
     const randClassName = fetchClassName();
-    const primaryWeapon =
-      Math.random() < 0.5 ? fetchWeapon("primary", game) : defaultWeapon;
-    const primAttachCount = 1;
-    const secAttachCount = 1;
-    const sideAttachCount = 1;
+    const game = "hardline";
+    const cycleStyle = "Swat";
+    const classType = "Operator";
+    const loadoutKey = `${game}-${cycleStyle}-${classType}`.toLowerCase();
+
+    //hardline-swat-operator
+    console.log("loadoutKey", loadoutKey);
 
     let weapons = {
       primary: {
-        weapon: primaryWeapon,
+        weapon: fetchWeapon("primary", loadoutKey),
         attachments: "",
       },
       secondary: {
-        weapon:
-          Math.random() < 0.5
-            ? fetchWeapon("primary", game, primaryWeapon.name)
-            : defaultWeapon,
+        weapon: fetchWeapon("secondary", loadoutKey),
         attachments: "",
       },
-      sidearm: {
-        weapon:
-          Math.random() < 0.5 ? fetchWeapon("sidearm", game) : defaultWeapon,
-        attachments: "",
+      melee: {
+        weapon: fetchWeapon("melee", loadoutKey),
       },
     };
-    //Update DeliveryCost with weapons
-    deliveryCost += weapons.primary.weapon.cost;
-    deliveryCost += weapons.secondary.weapon.cost;
-    deliveryCost += weapons.sidearm.weapon.cost;
 
-    // //Get Primary Attachments
+    //Get Primary Attachments
     // if (!weapons.primary.weapon?.no_attach) {
     //     weapons.primary.attachments = Object.values(fetchAttachments(weapons.primary.weapon, primAttachCount)).join(", ")
     // }
 
-    // //Get Secondary Attachments
+    //Get Secondary Attachments
     // if (!weapons.secondary.weapon?.no_attach) {
     //     weapons.secondary.attachments = Object.values(fetchAttachments(weapons.secondary.weapon, secAttachCount)).join(", ")
     // }
 
-    // //Get Sidearm Attachments
-    // if (!weapons.sidearm.weapon?.no_attach) {
-    //     weapons.sidearm.attachments = Object.values(fetchAttachments(weapons.sidearm.weapon, sideAttachCount)).join(", ")
-    // }
-
-    let body = {
-      left_arm: Math.random() < 0.5 ? fetchBody("arm", game) : defaultItem,
-      legs: Math.random() < 0.5 ? fetchBody("legs", game) : defaultItem,
-      right_arm: Math.random() < 0.5 ? fetchBody("arm", game) : defaultItem,
+    const equipment = {
+      gadgetOne: {
+        name: "No Gadget",
+        type: "",
+      },
+      gadgetTwo: {
+        name: "No Gadget",
+        type: "",
+      },
+      lethal: {
+        name: "Nade",
+        type: "",
+      },
     };
-    //Update DeliveryCost with body
-    deliveryCost += body.left_arm.cost;
-    deliveryCost += body.legs.cost;
-    deliveryCost += body.right_arm.cost;
 
-    let equipment = {
-      backpack:
-        Math.random() < 0.5 ? fetchEquipment("backpack", game) : defaultItem,
-      consumable:
-        Math.random() < 0.5 ? fetchEquipment("consumable", game) : defaultItem,
-    };
-    deliveryCost += equipment.backpack.cost;
-    deliveryCost += equipment.consumable.cost;
+    console.log("test", {
+      ...defaultData,
+      randClassName,
+      cycleStyle,
+      classType,
+      weapons,
+      equipment,
+    });
 
     setData({
       ...defaultData,
-      deliveryCost,
       randClassName,
+      cycleStyle,
+      classType,
       weapons,
-      body,
       equipment,
     });
   } catch (error: any) {

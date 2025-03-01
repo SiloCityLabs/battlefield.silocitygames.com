@@ -1,5 +1,6 @@
 import { getPrimaryList } from "@/helpers/generator/weapons/getPrimaryList";
-import { getSidearmList } from "@/helpers/generator/weapons/getSidearmList";
+import { getSecondaryList } from "@/helpers/generator/weapons/getSecondaryList";
+import { getMeleeList } from "@/helpers/generator/weapons/getMeleeList";
 import { randomListItem } from "@/helpers/_silabs/randomListItem";
 import { mergeObjectsWithRekey } from "@/helpers/_silabs/mergeObjectsWithRekey";
 //Types
@@ -7,14 +8,10 @@ import { Weapon } from "@/types/Generator";
 
 const weaponListGetters: Record<string, (game: string) => any> = {
   primary: getPrimaryList,
-  sidearm: getSidearmList,
+  secondary: getSecondaryList,
+  melee: getMeleeList,
   all: (game: string) =>
-    mergeObjectsWithRekey(getPrimaryList(game), getSidearmList(game)),
-};
-
-const rarityListGetters: Record<string, any> = {
-  primary: primaryRaritys,
-  sidearm: sidearmRaritys,
+    mergeObjectsWithRekey(getPrimaryList(game), getSecondaryList(game)),
 };
 
 export function fetchWeapon(

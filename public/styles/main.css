@@ -6,6 +6,10 @@
   color: white !important;
 }
 
+#main-header.hardline {
+  background: #e88408 !important;
+}
+
 /* Hardline - #E88408 */
 .btn-hardline {
   color: #ffffff; /* Assuming you want white text */
