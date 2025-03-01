@@ -1,0 +1,62 @@
+[
+  {
+    "name": "No Gadget",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "First Aid Pack",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Survivalist",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Defibrillator",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Grappling Hook",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Zipline",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "M320 CS Gas",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Passenger First Aid",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Stunt Driver",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Gas Mask",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "FR Mask",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Night Vision Goggles",
+    "type": "Gadget",
+    "game": "hardline"
+  }
+]

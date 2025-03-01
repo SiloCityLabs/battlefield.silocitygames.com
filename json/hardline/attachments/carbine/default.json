@@ -1,0 +1,37 @@
+{
+  "optic": [
+    "Iron Sight",
+    "Reflex [RDS]",
+    "Kobra [RDS]",
+    "Holo [1X]",
+    "Comp M4S [RDS]",
+    "Micro T1 [RDS]",
+    "SRS 02 [GDS]",
+    "PK-AS [1X]",
+    "IRNV [IR 1X]",
+    "Flir [IR 2X]",
+    "M145 [3.4X]",
+    "PO [3.5X]",
+    "ACOG [4X]",
+    "PSO-1 [4X]"
+  ],
+  "accessory": [
+    "No Accessory",
+    "Canted Ironsights",
+    "Canted RDS",
+    "Extended Magazine",
+    "Flash Light",
+    "Tactical Light",
+    "Laser Sight",
+    "AP Tracer Rounds"
+  ],
+  "muzzle": [
+    "Standard Barrel",
+    "Muzzle Brake",
+    "Compensator",
+    "Flash Hider",
+    "Heavy Barrel",
+    "Suppressor"
+  ],
+  "grip": ["No Attachment", "Angled Grip", "Stubby Grip", "Vertical Grip"]
+}

@@ -1,0 +1,32 @@
+{
+  "randClassName": "",
+  "weapons": {
+    "primary": {
+      "weapon": {
+        "name": "",
+        "type": "",
+        "game": "",
+        "no_attach": false
+      },
+      "attachments": ""
+    },
+    "secondary": {
+      "weapon": {
+        "name": "",
+        "type": "",
+        "game": "",
+        "no_attach": false
+      },
+      "attachments": ""
+    },
+    "sidearm": {
+      "weapon": {
+        "name": "",
+        "type": "",
+        "game": "",
+        "no_attach": false
+      },
+      "attachments": ""
+    }
+  }
+}

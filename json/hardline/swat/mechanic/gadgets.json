@@ -1,0 +1,62 @@
+[
+  {
+    "name": "No Gadget",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "M320 HE",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Repair Tool",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Satellite Phone",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Sabotage",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Armored Insert",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Gas Mask",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Grappling Hook",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Zipline",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Stunt Driver",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Night Vision Goggles",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "RF Jammer",
+    "type": "Gadget",
+    "game": "hardline"
+  }
+]
