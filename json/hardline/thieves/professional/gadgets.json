@@ -25,17 +25,17 @@
     "game": "hardline"
   },
   {
+    "name": "Gas Mask",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
     "name": "Grappling Hook",
     "type": "Gadget",
     "game": "hardline"
   },
   {
     "name": "Zipline",
-    "type": "Gadget",
-    "game": "hardline"
-  },
-  {
-    "name": "Gas Mask",
     "type": "Gadget",
     "game": "hardline"
   },

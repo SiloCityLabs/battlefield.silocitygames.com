@@ -6,7 +6,7 @@
     "no_attach_info": true
   },
   {
-    "name": "R700 LTR",
+    "name": "AWM",
     "type": "sniper",
     "game": "hardline",
     "no_attach_info": true
@@ -42,13 +42,13 @@
     "no_attach_info": true
   },
   {
-    "name": "Socom16",
+    "name": "Saiga .308",
     "type": "sniper",
     "game": "hardline",
     "no_attach_info": true
   },
   {
-    "name": "SR-25 ECC",
+    "name": "PTR-91",
     "type": "sniper",
     "game": "hardline",
     "no_attach_info": true
@@ -61,6 +61,12 @@
   },
   {
     "name": "RO933 M1",
+    "type": "sniper",
+    "game": "hardline",
+    "no_attach_info": true
+  },
+  {
+    "name": "SP-AR",
     "type": "sniper",
     "game": "hardline",
     "no_attach_info": true

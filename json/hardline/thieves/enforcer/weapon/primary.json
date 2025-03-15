@@ -6,19 +6,13 @@
     "no_attach_info": true
   },
   {
-    "name": "37 Stakeout",
+    "name": "Spas-12",
     "type": "shotgun",
     "game": "hardline",
     "no_attach_info": true
   },
   {
     "name": "Double-Barrel Shotgun",
-    "type": "shotgun",
-    "game": "hardline",
-    "no_attach_info": true
-  },
-  {
-    "name": "KSG12",
     "type": "shotgun",
     "game": "hardline",
     "no_attach_info": true
@@ -42,19 +36,19 @@
     "no_attach_info": true
   },
   {
-    "name": "Scar-H",
+    "name": "SA-58 OSW",
     "type": "battle_rifle",
     "game": "hardline",
     "no_attach_info": true
   },
   {
-    "name": "HCAR",
+    "name": "HK51",
     "type": "battle_rifle",
     "game": "hardline",
     "no_attach_info": true
   },
   {
-    "name": "SG510",
+    "name": "FAL",
     "type": "battle_rifle",
     "game": "hardline",
     "no_attach_info": true
