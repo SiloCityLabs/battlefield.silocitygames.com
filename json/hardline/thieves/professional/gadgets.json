@@ -1,0 +1,52 @@
+[
+  {
+    "name": "No Gadget",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Laser Tripmine",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Camera",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Decoy",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Stealth Training",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Grappling Hook",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Zipline",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Gas Mask",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Stunt Driver",
+    "type": "Gadget",
+    "game": "hardline"
+  },
+  {
+    "name": "Night Vision Goggles",
+    "type": "Gadget",
+    "game": "hardline"
+  }
+]

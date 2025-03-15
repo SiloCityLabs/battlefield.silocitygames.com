@@ -1,0 +1,224 @@
+[
+  {
+    "name": "Baseball Bat",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Crowbar",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Golf Club",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Lead Pipe",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Sledge Hammer",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Gold Golf Club",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Gold Lead Pipe",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Gold Sledge Hammer",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Gold Crowbar",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Shovel",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Gold Shovel",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Knife",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Boot",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Bowie",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Carbon Fiber",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Scout",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Seal",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Survival",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Trench",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "ACB-90",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Machete",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Shank",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Gold Knife",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Gold Boot",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Gold Scout",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Gold Seal",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Gold Survival",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Gold Trench",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Gold Machete",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Fire Axe",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Gold Fire Axe",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Inquisition Sword",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Inquisition Sword Gold",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Inquisition Sword Red",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Cleaver",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Devil's Toothpick",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Karambit",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  }
+]
