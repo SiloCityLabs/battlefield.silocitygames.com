@@ -1,0 +1,134 @@
+[
+  {
+    "name": "MP5K",
+    "type": "smg",
+    "game": "hardline",
+    "no_attach_info": true
+  },
+  {
+    "name": "M/45",
+    "type": "smg",
+    "game": "hardline",
+    "no_attach_info": true
+  },
+  {
+    "name": "MPX",
+    "type": "smg",
+    "game": "hardline",
+    "no_attach_info": true
+  },
+  {
+    "name": "K10",
+    "type": "smg",
+    "game": "hardline",
+    "no_attach_info": true
+  },
+  {
+    "name": "KMG9",
+    "type": "smg",
+    "game": "hardline",
+    "no_attach_info": true
+  },
+  {
+    "name": "M1A1",
+    "type": "smg",
+    "game": "hardline",
+    "no_attach_info": true
+  },
+  {
+    "name": "Scorpion",
+    "type": "smg",
+    "game": "hardline",
+    "no_attach_info": true
+  },
+  {
+    "name": "MP7",
+    "type": "smg",
+    "game": "hardline",
+    "no_attach_info": true
+  },
+  {
+    "name": "UMP-9",
+    "type": "smg",
+    "game": "hardline",
+    "no_attach_info": true
+  },
+  {
+    "name": "M5 Navy",
+    "type": "smg",
+    "game": "hardline",
+    "no_attach_info": true
+  },
+  {
+    "name": "M12S",
+    "type": "smg",
+    "game": "hardline",
+    "no_attach_info": true
+  },
+  {
+    "name": "M5SD",
+    "type": "smg",
+    "game": "hardline",
+    "no_attach_info": true
+  },
+  {
+    "name": "MX4",
+    "type": "smg",
+    "game": "hardline",
+    "no_attach_info": true
+  },
+  {
+    "name": "M1",
+    "type": "carbine",
+    "game": "hardline",
+    "no_attach_info": true
+  },
+  {
+    "name": "RO933 .300 BLK",
+    "type": "assault_rifle",
+    "game": "hardline",
+    "no_attach_info": true
+  },
+  {
+    "name": "M110K5",
+    "type": "battle_rifle",
+    "game": "hardline",
+    "no_attach_info": true
+  },
+  {
+    "name": "1887",
+    "type": "shotgun",
+    "game": "hardline",
+    "no_attach_info": true
+  },
+  {
+    "name": "AWS",
+    "type": "sniper",
+    "game": "hardline",
+    "no_attach_info": true
+  },
+  {
+    "name": "M1903",
+    "type": "sniper",
+    "game": "hardline",
+    "no_attach_info": true
+  },
+  {
+    "name": "Mammoth Gun",
+    "type": "special",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Syndicate Gun",
+    "type": "special",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "A 8S",
+    "type": "special",
+    "game": "hardline",
+    "no_attach": true
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Fast Throw",
+    "type": "Reputation",
+    "game": "hardline"
+  },
+  {
+    "name": "Extra Grenade",
+    "type": "Reputation",
+    "game": "hardline"
+  },
+  {
+    "name": "Fast Aim",
+    "type": "Reputation",
+    "game": "hardline"
+  },
+  {
+    "name": "Fast Reload",
+    "type": "Reputation",
+    "game": "hardline"
+  },
+  {
+    "name": "Reduced Fall",
+    "type": "Reputation",
+    "game": "hardline"
+  },
+  {
+    "name": "Flak Jacket",
+    "type": "Reputation",
+    "game": "hardline"
+  },
+  {
+    "name": "Upgraded Ammo Box",
+    "type": "Reputation",
+    "game": "hardline"
+  },
+  {
+    "name": "Extra Charges",
+    "type": "Reputation",
+    "game": "hardline"
+  }
+]

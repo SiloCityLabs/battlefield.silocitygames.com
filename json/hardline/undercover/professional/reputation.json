@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Fast Climb",
+    "type": "Reputation",
+    "game": "hardline"
+  },
+  {
+    "name": "Hold Breath",
+    "type": "Reputation",
+    "game": "hardline"
+  },
+  {
+    "name": "Advanced Spot",
+    "type": "Reputation",
+    "game": "hardline"
+  },
+  {
+    "name": "Fast Reload",
+    "type": "Reputation",
+    "game": "hardline"
+  },
+  {
+    "name": "Reduced Fall",
+    "type": "Reputation",
+    "game": "hardline"
+  },
+  {
+    "name": "Low Profile",
+    "type": "Reputation",
+    "game": "hardline"
+  },
+  {
+    "name": "Fast Unspot",
+    "type": "Reputation",
+    "game": "hardline"
+  },
+  {
+    "name": "Delayed Trigger",
+    "type": "Reputation",
+    "game": "hardline"
+  }
+]

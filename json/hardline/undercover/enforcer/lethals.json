@@ -1,0 +1,37 @@
+[
+  {
+    "name": "M67 Frag",
+    "type": "Grenades/Knives",
+    "game": "hardline"
+  },
+  {
+    "name": "M18 Smoke",
+    "type": "Grenades/Knives",
+    "game": "hardline"
+  },
+  {
+    "name": "M84 Flashbang",
+    "type": "Grenades/Knives",
+    "game": "hardline"
+  },
+  {
+    "name": "Gas Grenade",
+    "type": "Grenades/Knives",
+    "game": "hardline"
+  },
+  {
+    "name": "Incendiary Device",
+    "type": "Grenades/Knives",
+    "game": "hardline"
+  },
+  {
+    "name": "Throwing Knife",
+    "type": "Grenades/Knives",
+    "game": "hardline"
+  },
+  {
+    "name": "Throwing Knife Gold",
+    "type": "Grenades/Knives",
+    "game": "hardline"
+  }
+]

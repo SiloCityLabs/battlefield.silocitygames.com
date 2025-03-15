@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Extra Magazines",
+    "type": "Reputation",
+    "game": "hardline"
+  },
+  {
+    "name": "Fast Ready",
+    "type": "Reputation",
+    "game": "hardline"
+  },
+  {
+    "name": "Fast Aim",
+    "type": "Reputation",
+    "game": "hardline"
+  },
+  {
+    "name": "Fast Swap",
+    "type": "Reputation",
+    "game": "hardline"
+  },
+  {
+    "name": "Extra Grenade",
+    "type": "Reputation",
+    "game": "hardline"
+  },
+  {
+    "name": "Fast Repair",
+    "type": "Reputation",
+    "game": "hardline"
+  },
+  {
+    "name": "Extra 40MM Grenades",
+    "type": "Reputation",
+    "game": "hardline"
+  },
+  {
+    "name": "Delayed Trigger",
+    "type": "Reputation",
+    "game": "hardline"
+  }
+]

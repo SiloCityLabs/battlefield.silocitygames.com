@@ -1,0 +1,50 @@
+[
+  {
+    "name": "92FS",
+    "type": "pistol",
+    "game": "hardline",
+    "no_attach_info": true
+  },
+  {
+    "name": "P226",
+    "type": "pistol",
+    "game": "hardline",
+    "no_attach_info": true
+  },
+  {
+    "name": "G17",
+    "type": "pistol",
+    "game": "hardline",
+    "no_attach_info": true
+  },
+  {
+    "name": "FN57",
+    "type": "pistol",
+    "game": "hardline",
+    "no_attach_info": true
+  },
+  {
+    "name": "G17 Race Pistol",
+    "type": "pistol",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "T62 CEW",
+    "type": "special",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Tracking Dart",
+    "type": "special",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Dual Vz. 61",
+    "type": "machine_pistol",
+    "game": "hardline",
+    "no_attach": true
+  }
+]
