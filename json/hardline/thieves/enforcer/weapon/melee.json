@@ -1,42 +1,54 @@
 [
   {
-    "name": "Police Baton",
+    "name": "Baseball Bat",
     "type": "melee",
     "game": "hardline",
     "no_attach": true
   },
   {
-    "name": "Blackjack",
+    "name": "Crowbar",
     "type": "melee",
     "game": "hardline",
     "no_attach": true
   },
   {
-    "name": "Breaching Hammer",
+    "name": "Golf Club",
     "type": "melee",
     "game": "hardline",
     "no_attach": true
   },
   {
-    "name": "Collapsible Baton",
+    "name": "Lead Pipe",
     "type": "melee",
     "game": "hardline",
     "no_attach": true
   },
   {
-    "name": "Nightstick",
+    "name": "Sledge Hammer",
     "type": "melee",
     "game": "hardline",
     "no_attach": true
   },
   {
-    "name": "Gold Hammer",
+    "name": "Gold Golf Club",
     "type": "melee",
     "game": "hardline",
     "no_attach": true
   },
   {
-    "name": "Gold Baton",
+    "name": "Gold Lead Pipe",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Gold Sledge Hammer",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Gold Crowbar",
     "type": "melee",
     "game": "hardline",
     "no_attach": true
@@ -102,6 +114,24 @@
     "no_attach": true
   },
   {
+    "name": "ACB-90",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Machete",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Shank",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
     "name": "Gold Knife",
     "type": "melee",
     "game": "hardline",
@@ -133,6 +163,12 @@
   },
   {
     "name": "Gold Trench",
+    "type": "melee",
+    "game": "hardline",
+    "no_attach": true
+  },
+  {
+    "name": "Gold Machete",
     "type": "melee",
     "game": "hardline",
     "no_attach": true
