@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Default",
+    "type": "Outfit",
+    "game": "hardline"
+  },
+  {
+    "name": "Elite",
+    "type": "Outfit",
+    "game": "hardline"
+  },
+  {
+    "name": "Stealth",
+    "type": "Outfit",
+    "game": "hardline"
+  },
+  {
+    "name": "Team Pride",
+    "type": "Outfit",
+    "game": "hardline"
+  }
+]
